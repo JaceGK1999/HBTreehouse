@@ -22,8 +22,6 @@ export default function Login() {
         formState.email,
         formState.password
       );
-      console.log(loginWasSuccessful, 'login success');
-      // if (loginWasSuccessful)
       loginWasSuccessful && history.replace(from);
     } catch (error) {
       setError(error.message);
