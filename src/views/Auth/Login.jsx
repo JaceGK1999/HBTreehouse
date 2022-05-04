@@ -24,7 +24,7 @@ export default function Login() {
       );
       console.log(loginWasSuccessful, 'login success');
       // if (loginWasSuccessful)
-      return history.replace(from);
+      loginWasSuccessful && history.replace(from);
     } catch (error) {
       setError(error.message);
     }
